@@ -13,3 +13,17 @@ class Chess:
             return parsed_move in self.board.legal_moves
         except ValueError:
             return False
+
+    def game_over(self) -> bool:
+        if self.board.is_checkmate():
+            return True
+        elif self.board.is_stalemate():
+            return True
+        elif self.board.is_insufficient_material():
+            return True
+        elif self.board.can_claim_fifty_moves():
+            return True
+        elif self.board.can_claim_threefold_repetition():
+            return True
+        else:
+            return False
