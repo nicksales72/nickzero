@@ -9,6 +9,7 @@ __pycache__/
 *.pyd
 
 !*.py
+!*.github
 !*.toml
 !*.gitignore
 !LICENSE
