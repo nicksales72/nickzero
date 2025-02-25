@@ -25,5 +25,8 @@ class TestChess(unittest.TestCase):
         self.assertFalse(self.game.is_legal_move("h9"))
         self.assertFalse(self.game.is_legal_move("Qh5"))
 
+    def test_game_over(self):
+        self.assertFalse(self.game.game_over())
+
 if __name__ == "__main__":
     unittest.main()
