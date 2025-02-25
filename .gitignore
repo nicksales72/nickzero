@@ -11,4 +11,5 @@ __pycache__/
 !*.py
 !*.toml
 !*.gitignore
+!LICENSE
 !README.md
