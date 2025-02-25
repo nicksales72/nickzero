@@ -1,0 +1,17 @@
+[project]
+name = "nickzero"
+version = "0.1.0"
+description = "A neural net that uses self-play RF (like alphazero) to play chess"
+authors = ["Nick"]
+dependencies = [
+  "torch",
+  "python-chess",
+  "numpy",
+  "matplotlib"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest"
+]
+

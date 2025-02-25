@@ -1,0 +1,14 @@
+# .gitignore is Sisyphean: https://rgbcu.be/blog/gitignore/
+*
+
+!*/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+!*.py
+!*.toml
+!*.gitignore
+!README.md
