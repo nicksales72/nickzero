@@ -39,3 +39,10 @@ class Chess:
             or self.board.can_claim_fifty_moves()
             or self.board.can_claim_threefold_repetition()
         )
+
+    def get_winner(self) -> str:
+        if self.board.is_checkmate():
+            return "Black" if self.board.turn else "White"
+        elif self.board.is_stalemate() or self.board.is_insufficient_material() or self.board.can_claim_fifty_moves() or self.board.can_claim_threefold_repetition():
+            return "Draw"
+        return "In Progress"
