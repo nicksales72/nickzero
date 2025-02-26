@@ -7,7 +7,8 @@ def game_loop(game):
         move = input(f"{turn} to move: ")
 
         if not game.move_piece(move): print("Invalid move.")
-
+    
+    game.reset_board()
     print(game.get_board_ascii())
     print(f"{game.get_winner()} wins.")
 
