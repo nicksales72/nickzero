@@ -1,6 +1,6 @@
 from chess_env import Chess
 
-def game_loop(game):
+def game_loop(game) -> None:
     while not game.game_over():
         print(game.get_board_ascii())
         turn = "White" if game.board.turn else "Black" # White == T, Black == F
